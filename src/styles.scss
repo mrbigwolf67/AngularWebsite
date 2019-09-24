@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+// *,
+// *::after,
+// *::before {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: inherit;
+//   }
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  // background: url('./assets/images/skrivbord.jpg')no-repeat center center;
+  // background-size: cover;
+  // height: 100vh;
+}
