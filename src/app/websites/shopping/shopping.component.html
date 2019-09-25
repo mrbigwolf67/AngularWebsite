@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
   <div class="logo-container">
    <h4 class="logo">Three Dots</h4>
   </div>
@@ -9,7 +9,7 @@
       <li><a class="nav-link" href="#">Contact</a></li>
     </ul>
   </nav>
-  <div class="cart">
+  <div class="shopping-cart">
     <img src="../../../assets/images/cart.svg" alt="">
   </div>
 </header>
@@ -24,7 +24,7 @@
     </div>
     <div class="cta">
       <button class="cta-select">14 Inch</button>
-      <button class="cta-add">Add to cart</button>
+      <button class="cta-add add-to-cart">Add to cart</button>
     </div>
   </div>
   <div class="cover1">
@@ -47,4 +47,26 @@
   <img src="../../../assets/images/arrow-right.svg" alt="">
 </div>
 
+</main> -->
+<main>
+<div class="wrapper">
+    <h1>Erbjudande</h1>
+<span><i class="shopping-cart"></i></span>
+
+          <ul class="items">
+              <li *ngFor="let item of articles">
+                <div class="item" id="{{item.id}}">
+                   <img src="{{item.image}}" alt="item" />
+                   <br>
+                    <h2>T-shirt {{item.id}}</h2>
+                   <p>PRIS: {{item.price}}   kr</p>
+                   <button class="add-to-cart" type="button" (click)="addToChart(item.id)">Lägg till</button>
+                </div>
+
+              </li>
+
+            </ul>
+
+</div>
 </main>
+
