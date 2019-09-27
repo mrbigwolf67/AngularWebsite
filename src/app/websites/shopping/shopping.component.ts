@@ -15,6 +15,7 @@ import {
   templateUrl: './shopping.component.html',
   styleUrls: ['./shopping.component.scss'],
   animations: [
+
     trigger('listAnimation', [
       transition('* <=> *', [
         query(
