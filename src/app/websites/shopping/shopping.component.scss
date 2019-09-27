@@ -242,16 +242,18 @@ main {
   font: normal 3px/1.5;
   font-family: 'Roboto Condensed', sans-serif;
   color: #333;
-  display: flex;
+  // display: flex;
     // width: 90%;
     // margin: auto;
      min-height: 100vh;
-     align-items: center;
+    // align-items: center;
 }
 .wrapper {
-  width: 100%;
-  margin: 10px auto;
-  align-content: center;
+  //width: 90%;
+  margin-top: 10px;
+  display: flex;
+  //flex-flow:  row wrap;
+  align-items: center;
   //padding: 0px;
 }
 header {
@@ -271,20 +273,20 @@ h1 {
   font-weight: normal;
   text-transform: uppercase;
   padding: 4px 20px;
-  //float: left;
   border-radius: 50px;
   margin: 15px 0 0 10px;
 }
 .items {
-  display: block;
-  margin: 60px 20px;
-  //display: flex;
+ // display: block;
+ flex: 1;
+ margin: 55px auto;
+  //text-align: center;
 }
 .item {
   background-color: #fff;
   float: left;
-  margin: 0 0px 10px 10px;
-  width: 250px;
+  margin: 5px;
+  min-width: 250px;
   padding: 10px;
 }
 .item img {
@@ -331,6 +333,13 @@ p{
   background: url('../../../assets/images/cart.png') no-repeat 0 0;
   width: 34px;
   height: 34px;
-  margin: 20px 10px 0 0;
+  margin: 20px 60px 0 0;
+}
+
+
+@media screen and (max-width: 567px) {
+    .wrapper {
+      flex-direction: column;
+}
 }
 

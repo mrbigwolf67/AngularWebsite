@@ -49,15 +49,18 @@
 
 </main> -->
 <main>
-    <div class="wrapper">
+  <div class="wrapper">
   <header>
       <h1>Erbjudande</h1>
   <span><i class="shopping-cart"></i></span>
+  <span><i class="hambuger">-</i></span>
+  <span><i class="hambuger">-</i></span>
+  <span><i class="hambuger">-</i></span>
   </header>
 
 
-          <ul class="items">
-              <li *ngFor="let item of articles">
+          <ul *ngIf="articles" class="items" [@listAnimation]="articles">
+              <li *ngFor="let item of articles" >
                 <div class="item" id="{{item.id}}">
                    <img src="{{item.image}}" alt="item" />
                    <br>
@@ -65,9 +68,7 @@
                    <p>PRIS: {{item.price}}   kr</p>
                    <button class="add-to-cart" type="button" (click)="addToChart(item.id)">Lägg till</button>
                 </div>
-
               </li>
-
             </ul>
 
 </div>

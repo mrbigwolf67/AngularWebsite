@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { RoutingModule } from './routing/routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ShoppingComponent } from './websites/shopping/shopping.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ShoppingComponent } from './websites/shopping/shopping.component';
   imports: [
     RoutingModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
