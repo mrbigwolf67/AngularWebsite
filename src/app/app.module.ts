@@ -10,6 +10,7 @@ import { RoutingModule } from './routing/routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ShoppingComponent } from './websites/shopping/shopping.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LandingPageComponent } from './websites/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SiteLayoutComponent,
     HomeComponent,
     NavbarComponent,
-    ShoppingComponent
+    ShoppingComponent,
+    LandingPageComponent
   ],
   imports: [
     RoutingModule,

@@ -5,6 +5,7 @@ import { SiteLayoutComponent } from '../app-layout/site-layout/site-layout.compo
 import { HomeComponent } from '../home/home.component';
 import { AppLayoutComponent } from '../app-layout/app-layout/app-layout.component';
 import { ShoppingComponent } from '../websites/shopping/shopping.component';
+import { LandingPageComponent } from '../websites/landing-page/landing-page.component';
 
 const routes: Routes = [
   // Site routes goes here
@@ -19,6 +20,9 @@ const routes: Routes = [
           {
             path: 'shopping', component: ShoppingComponent
           },
+          {
+            path: 'landing', component: LandingPageComponent
+          }
           // {
           //   path: 'coming-soon', component: ComingSoonComponent
           // },
