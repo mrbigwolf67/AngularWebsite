@@ -44,7 +44,7 @@ const routes: Routes = [
           // {
           //   path: 'store', component: ShoppingCartComponent
           // }
-        ]
+        ],
      },
 
      // otherwise redirect to home
@@ -53,7 +53,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, RouterModule.forRoot(routes, { useHash: true })],
+  imports: [CommonModule, RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled', useHash: true })],
   exports: [RouterModule]
 })
 export class RoutingModule {}

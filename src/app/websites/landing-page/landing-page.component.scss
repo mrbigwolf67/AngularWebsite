@@ -1,0 +1,85 @@
+// body {
+//   height: 100vh;
+// }
+#main {
+  height: 100vh;
+  padding: 0;
+}
+.item {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+.item::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.item .container {
+  display: inline-block;
+  vertical-align: middle;
+  perspective: 900px;
+}
+.item .container > :last-child {
+  margin-bottom: 0;
+}
+.item .container .title {
+  display: inline-block;
+  background: white;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  font-size: 2.5em;
+  transform-origin: 50% 50%;
+}
+.item .container p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 0;
+}
+.item .next {
+  position: absolute;
+  bottom: 2.5em;
+  left: 50%;
+  width: 5em;
+  height: 5em;
+  margin-left: -2.5em;
+  line-height: 5em;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  color: white;
+  text-decoration: none;
+  border: solid 1px white;
+}
+#header {
+  background-color: #2a2d3c;
+}
+#header .title {
+  color: #2a2d3c;
+}
+#one {
+  background-color: aqua;
+}
+#one .title {
+  color: aqua;
+  font-family: tahoma;
+}
+#two {
+  background-color: #3ba081;
+}
+#two .title {
+  color:  #3ba081;
+}
+#three {
+  background-color: #fb527a;
+}
+#three .title {
+  color:  #fb527a;
+}

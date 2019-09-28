@@ -1,47 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import {
-  trigger,
-  transition,
-  query,
-  style,
-  stagger,
-  animate
-} from '@angular/animations';
+import { listAnimation } from '../utilitys/animation';
 // import * as effect from 'jquery-ui-dist/jquery-ui';
 
 @Component({
   selector: 'app-shopping',
   templateUrl: './shopping.component.html',
   styleUrls: ['./shopping.component.scss'],
-  animations: [
-
-    trigger('listAnimation', [
-      transition('* <=> *', [
-        query(
-          ':enter',
-          [
-            style({ opacity: 0, transform: 'translateY(-50px)' }),
-            stagger(
-              '150ms',
-              animate(
-                '500ms ease-in',
-                style({ opacity: 1, transform: 'translateY(0px)' })
-              )
-            )
-          ],
-          { optional: true }
-        ),
-        query(
-          ':leave',
-          [animate('500ms', style({ opacity: 0, transform: 'rotate(90deg)' }))],
-          {
-            optional: true,
-          },
-        )
-      ])
-    ])
-  ]
+  animations: [listAnimation ]
 })
 export class ShoppingComponent implements OnInit {
 
