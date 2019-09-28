@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { listAnimation } from '../utilitys/animation';
-// import * as effect from 'jquery-ui-dist/jquery-ui';
+import { listAnimation, slideInAnimation } from '../utilitys/animation';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-shopping',
   templateUrl: './shopping.component.html',
   styleUrls: ['./shopping.component.scss'],
-  animations: [listAnimation ]
+  animations: [listAnimation, slideInAnimation ]
 })
 export class ShoppingComponent implements OnInit {
 

@@ -18,7 +18,7 @@ const routes: Routes = [
        path: '', component: AppLayoutComponent,
         children: [
           {
-            path: 'shopping', component: ShoppingComponent
+            path: 'shopping', component: ShoppingComponent, data: {animation: 'articles'}
           },
           {
             path: 'landing', component: LandingPageComponent
