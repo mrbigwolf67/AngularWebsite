@@ -51,26 +51,31 @@
 <main>
   <div class="wrapper">
   <header>
-      <h1>Erbjudande</h1>
+      <h1 *ngIf="articles && !hide">Erbjudande</h1>
+      <button *ngIf="hide" type="button" [routerLink]="['/shopping']" (click)="hideArticles()">Tillbaka</button>
   <span><i class="shopping-cart"></i></span>
+  <!-- <span><i class="hambuger">-</i></span>
   <span><i class="hambuger">-</i></span>
-  <span><i class="hambuger">-</i></span>
-  <span><i class="hambuger">-</i></span>
+  <span><i class="hambuger">-</i></span> -->
   </header>
 
 
-          <ul *ngIf="articles" class="items" [@listAnimation]="articles">
+          <ul *ngIf="articles && !hide" class="items" [@listAnimation]="articles">
               <li *ngFor="let item of articles" >
                 <div class="item" id="{{item.id}}">
                    <img src="{{item.image}}" alt="item" />
                    <br>
                     <h2>T-shirt {{item.id}}</h2>
                    <p>PRIS: {{item.price}}   kr</p>
+
                    <button class="add-to-cart" type="button" (click)="addToChart(item.id)">Lägg till</button>
+                   <button class="add-to-cart" type="button" [routerLink]="['/shopping', item.id]" (click)="hideArticles()">Läs mer</button>
                 </div>
               </li>
             </ul>
 
 </div>
+  <router-outlet></router-outlet>
 </main>
+
 

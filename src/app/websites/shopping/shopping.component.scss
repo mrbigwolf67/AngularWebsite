@@ -280,6 +280,7 @@ h1 {
  // display: block;
  flex: 1;
  margin: 55px auto;
+ position: relative;
   //text-align: center;
 }
 .item {
@@ -334,6 +335,48 @@ p{
   width: 34px;
   height: 34px;
   margin: 20px 60px 0 0;
+}
+
+.text_child {
+  color: white;
+}
+.container {
+  //border: 3px solid blue;
+  margin: 45px 20px;
+ // padding: 20px 40px 40px;
+  max-width: 840px;
+  display: flex;
+  min-height: 100vh;
+}
+ .item .image_child {
+
+      margin: 10px 0 0 0;
+      width: 100%;
+      object-fit: contain;
+      align-self: flex-start;
+  }
+  .relative {
+    position: relative;
+  }
+  .text_child {
+    padding: 10px;
+  }
+  .add-to-child_cart {
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    flex: 1;
+    display: inline-block;
+  }
+
+
+  @media screen and (max-width: 567px) {
+    .text_child h2 {
+     color: rgb(119, 11, 11);
+}
+.container {
+  flex-direction: column;
+}
 }
 
 

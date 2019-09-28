@@ -6,6 +6,7 @@ import { HomeComponent } from '../home/home.component';
 import { AppLayoutComponent } from '../app-layout/app-layout/app-layout.component';
 import { ShoppingComponent } from '../websites/shopping/shopping.component';
 import { LandingPageComponent } from '../websites/landing-page/landing-page.component';
+import { ShoppingDetailsComponent } from '../websites/shopping/shopping-details/shopping-details.component';
 
 const routes: Routes = [
   // Site routes goes here
@@ -18,7 +19,12 @@ const routes: Routes = [
        path: '', component: AppLayoutComponent,
         children: [
           {
-            path: 'shopping', component: ShoppingComponent, data: {animation: 'articles'}
+            path: 'shopping', component: ShoppingComponent, data: { animation: 'articles'},
+              children: [
+                {
+                  path: ':id', component: ShoppingDetailsComponent, data: { animation: 'article'}
+                },
+              ]
           },
           {
             path: 'landing', component: LandingPageComponent

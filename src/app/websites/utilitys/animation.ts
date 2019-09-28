@@ -28,7 +28,7 @@ trigger('listAnimation', [
     ),
     query(
       ':leave',
-      [animate('500ms', style({ opacity: 0, transform: 'rotate(90deg)' }))],
+      [animate('500ms', style({ opacity: 0, transform: 'rotateY(90deg)' }))],
       {
         optional: true,
       },

@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ShoppingComponent } from './websites/shopping/shopping.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageComponent } from './websites/landing-page/landing-page.component';
+import { ShoppingDetailsComponent } from './websites/shopping/shopping-details/shopping-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LandingPageComponent } from './websites/landing-page/landing-page.compo
     HomeComponent,
     NavbarComponent,
     ShoppingComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ShoppingDetailsComponent
   ],
   imports: [
     RoutingModule,

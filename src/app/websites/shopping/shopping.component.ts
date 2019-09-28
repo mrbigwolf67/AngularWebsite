@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import { listAnimation, slideInAnimation } from '../utilitys/animation';
-import { RouterOutlet } from '@angular/router';
+import { ShoppingService } from './shopping.service';
 
 @Component({
   selector: 'app-shopping',
@@ -11,73 +11,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class ShoppingComponent implements OnInit {
 
-articles = [
-  {
-    id: '1',
-    price: '149',
-    image: '../../../assets/images/one.jpg'
-  },
-  {
-    id: '2',
-    price: '199',
-    image: '../../../assets/images/two.jpg'
-  },
-  {
-    id: '3',
-    price: '129',
-    image: '../../../assets/images/three.jpg'
-  },
-  {
-    id: '4',
-    price: '149',
-    image: '../../../assets/images/one.jpg'
-  },
-  {
-    id: '5',
-    price: '199',
-    image: '../../../assets/images/two.jpg'
-  },
-  {
-    id: '6',
-    price: '129',
-    image: '../../../assets/images/three.jpg'
-  }
-  ,
-  {
-    id: '7',
-    price: '149',
-    image: '../../../assets/images/one.jpg'
-  },
-  {
-    id: '8',
-    price: '199',
-    image: '../../../assets/images/two.jpg'
-  },
-  {
-    id: '9',
-    price: '129',
-    image: '../../../assets/images/three.jpg'
-  },
-  {
-    id: '10',
-    price: '149',
-    image: '../../../assets/images/one.jpg'
-  },
-  {
-    id: '11',
-    price: '199',
-    image: '../../../assets/images/two.jpg'
-  },
-  {
-    id: '12',
-    price: '129',
-    image: '../../../assets/images/three.jpg'
-  }
-];
 
-  constructor() {}
-
+  constructor(private shoppingService: ShoppingService) {}
+  articles = [];
+  hide = false;
   ngOnInit() {
+    this.articles = this.shoppingService.getLadyArticles();
+    this.hide = false;
   }
 
   addToChart(id) {
@@ -122,6 +62,15 @@ articles = [
         }
       );
     }
+  }
+
+  hideArticles() {
+    if(!this.hide) {
+      this.hide = true;
+    } else {
+      this.hide = false;
+    }
+
   }
 
 }
