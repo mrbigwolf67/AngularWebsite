@@ -25,10 +25,65 @@
   </div>
 </nav> -->
 
-<nav>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About me</a></li>
-    <li><a routerLink="/shopping">Posts</a></li>
-  </ul>
-</nav>
+<header>
+  <div class="container">
+      <!-- <i class="icon ion-md-heart"></i>
+      <i class="icon icon-md-menu"></i> -->
+    <nav>
+      <div class="menu-icons">
+        <i class="icon ion-md-menu"></i>
+        <i class="icon ion-md-close"></i>
+      </div>
+      <a href="#" class="logo">
+        <i class="icon ion-md-restaurant"></i>
+      </a>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu
+            <i class="icon ion-md-arrow-dropdown"></i>
+        </a>
+          <ul class="sub-menu">
+            <li>
+                <a href="#">More About me</a>
+            </li>
+            <li>
+                <a href="#">More About me
+                    <i class="icon ion-md-arrow-dropdown"></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="#">More About me</a>
+                    </li>
+                    <li>
+                        <a href="#">More About me</a>
+                    </li>
+                    <li>
+                        <a href="#">More About me
+                            <i class="icon ion-md-arrow-dropdown"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">More Food</a>
+                            </li>
+                            <li>
+                                <a href="#">More Lunch</a>
+                            </li>
+                            <li>
+                                <a href="#">More Dinner</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a routerLink="/shopping">Shopping</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a routerLink="/shopping">Shopping</a></li>
+        <li><a href="#">About me</a></li>
+        <li class="move-right btn"><a>Book a table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
