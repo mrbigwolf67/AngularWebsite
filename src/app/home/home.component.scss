@@ -28,24 +28,24 @@
 }
 
 .text h1{
-  font-size: 8em;
+  font-size: 2.3em;
   margin: 2em 0;
   font-family: 'Blastimo', sans-serif;
 }
 
 .text h2{
-  font-size: 1.6em;
+  font-size: .6em;
   text-transform: uppercase;
   font-weight: 300;
 }
 
 .text p{
-  font-size: 1.6em;
+  font-size: 1.2em;
   margin-bottom: 5em;
 }
 
 .text .btn{
-  font-size: 1.6em;
+  font-size: 1.2em;
   padding-left: 3em;
   padding-right: 3em;
   color: #eee;
@@ -53,10 +53,10 @@
 }
 @media screen and (max-width: 830px){
   .text h1{
-      font-size: 4em;
+      font-size: 3em;
   }
 
   .text .btn{
-      font-size: 1.2em;
+      font-size: 1.0em;
   }
 }

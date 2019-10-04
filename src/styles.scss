@@ -14,11 +14,12 @@ html {
 }
 
 body {
-  font-size: 10px;
+  font-size: calc(1vw + 0.6em);
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  overflow-x: hidden;
   // background: url('./assets/images/skrivbord.jpg')no-repeat center center;
   // background-size: cover;
   // height: 100vh;

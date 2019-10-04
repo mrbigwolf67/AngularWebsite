@@ -19,5 +19,8 @@ export class ShoppingDetailsComponent implements OnInit {
   ngOnInit() {
    // alert(this.activatedRoute.snapshot.params.id);
   }
+  addToChart(id) {
+    console.log(id);
+  }
 
 }
