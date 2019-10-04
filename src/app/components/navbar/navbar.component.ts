@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  openMenu(e: Event) {
+  openMenu() {
     // tslint:disable-next-line: no-shadowed-variable
     const selectElement =  document.querySelector('nav');
    // selectElement(element: 'nav').classList.toggle(token: 'active');

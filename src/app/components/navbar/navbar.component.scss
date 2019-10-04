@@ -145,9 +145,9 @@ nav {
   border-bottom-color: #eb3007;
 }
 .sub-menu .sub-menu::before {
-  top: 1.5em;
-  left: -2.5em;
-  border: 1.2em solid transparent;
+  top: .2em;
+  left: -2em;
+  border: .8em solid transparent;
   border-right-color: #eb3007;
 }
 .sub-menu .sub-menu {
@@ -187,11 +187,14 @@ li.move-right {
     line-height: 4em;
     width: 10em;
   }
+  .nav-list a {
+    font-size: 1em;
+  }
   .sub-menu {
     position: initial;
     border: 3px solid transparent;
     border-left-color: #eb3007;
-    margin-left: 1em;
+    margin-left: 2em;
     max-height: 0;
   }
   .sub-menu::before {

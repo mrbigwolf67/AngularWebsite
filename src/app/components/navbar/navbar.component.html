@@ -31,45 +31,61 @@
       <i class="icon icon-md-menu"></i> -->
     <nav>
       <div class="menu-icons">
-        <i class="icon ion-md-menu" (click)="openMenu($event)"></i>
-        <i class="icon ion-md-close" (click)="openMenu($event)"></i>
+        <i class="icon ion-md-menu" (click)="openMenu()"></i>
+        <i class="icon ion-md-close" (click)="openMenu()"></i>
       </div>
       <a href="#" class="logo">
         <i class="icon ion-md-restaurant"></i>
       </a>
       <ul class="nav-list">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Menu
+        <li><a href="#">Projekt
             <i class="icon ion-md-arrow-dropdown"></i>
         </a>
           <ul class="sub-menu">
             <li>
-                <a href="#">More About me</a>
+                <a href="#">Angular</a>
             </li>
             <li>
-                <a href="#">More About me
+             <a routerLink="/shopping">Webb Shop </a>
+          </li>
+            <li>
+                <a href="#">React
                     <i class="icon ion-md-arrow-dropdown"></i>
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a href="#">More About me</a>
+                        <a href="#">Apotek webshop</a>
                     </li>
                     <li>
-                        <a href="#">More About me</a>
+                        <a href="#">Moviesearch</a>
                     </li>
                     <li>
-                        <a href="#">More About me
+                        <a href="#">VUE
                             <i class="icon ion-md-arrow-dropdown"></i>
                         </a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="#">More Food</a>
+                                <a href="#">Moviesearch VUE(X) Store</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#">More Lunch</a>
-                            </li>
+                            </li> -->
                             <li>
-                                <a href="#">More Dinner</a>
+                                <a href="#">Apputveckling
+                                  <i class="icon ion-md-arrow-dropdown"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                  <li>
+                                      <a href="#">React Native</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Native script</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Flutter</a>
+                                  </li>
+                              </ul>
                             </li>
                         </ul>
                     </li>
@@ -81,7 +97,7 @@
         <li><a href="#">About me</a></li>
         <li><a routerLink="/shopping">Shopping</a></li>
         <li><a href="#">About me</a></li>
-        <li class="move-right btn"><a>Book a table</a></li>
+        <li class="move-right btn"><a>Kontakta mig</a></li>
       </ul>
     </nav>
   </div>
