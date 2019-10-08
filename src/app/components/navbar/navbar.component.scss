@@ -30,7 +30,7 @@ header {
 }
 .container {
   width: 100%;
-  max-width: 117em;
+  // max-width: 117em;
   margin: 0 auto;
   padding: 0 1.5em;
 }
@@ -39,7 +39,7 @@ header {
   font-size: 2em;
   position: absolute;
   top: 50%;
-  right: 2em;
+  right: 1em;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -59,7 +59,8 @@ nav {
 .logo {
   width: 3em;
   height: 3em;
-  background-color: #eb3007;
+  background-color: rgba(0, 195, 255, 0.705);
+  // background-color: #eb3007;
   display: flex;
   border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -104,7 +105,8 @@ nav {
   padding: .8em;
   display: inline-block;
   // background-color: #eb3007;
-  border: 2px solid #eb3007;
+  // background-color: #00C2FF;
+  border: 2px solid #00C2FF;
   border-radius: 7em;
   -webkit-border-radius: 7em;
   -moz-border-radius: 7em;
@@ -117,7 +119,7 @@ nav {
   -o-transition: background-color 650ms;
 }
 .btn:hover {
-  color: #eb3007;
+  color: #00C2FF;
   background-color: rgba(0, 0, 0, .2);
 }
 .sub-menu {
@@ -125,7 +127,7 @@ nav {
   display: block;
   position: absolute;
   border-top: 3px solid #eb3007;
-  background-color: #191919;
+  background-color: #191919d0;
   z-index: 100;
   top: 16em;
   opacity: 0;
@@ -181,7 +183,7 @@ li.move-right {
     align-items: initial;
     background-color: #191919;
     z-index: 1000;
-    overflow-y: scroll;
+   // overflow-y: scroll;
   }
   .nav-list > li {
     line-height: 4em;
