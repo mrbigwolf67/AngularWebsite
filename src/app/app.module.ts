@@ -12,6 +12,8 @@ import { ShoppingComponent } from './websites/shopping/shopping.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageComponent } from './websites/landing-page/landing-page.component';
 import { ShoppingDetailsComponent } from './websites/shopping/shopping-details/shopping-details.component';
+import { HomeFooterComponent } from './home/home-footer/home-footer.component';
+import { MyWorkComponent } from './home/my-work/my-work.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ShoppingDetailsComponent } from './websites/shopping/shopping-details/s
     NavbarComponent,
     ShoppingComponent,
     LandingPageComponent,
-    ShoppingDetailsComponent
+    ShoppingDetailsComponent,
+    HomeFooterComponent,
+    MyWorkComponent
   ],
   imports: [
     RoutingModule,
