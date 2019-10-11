@@ -163,11 +163,13 @@
 .grey-container figure img {
   width: 40%;
   height: 40%;
+  border: 1px solid white;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  box-shadow: gray 0 0 10px;
 }
 .grey-container ul li:nth-child(3) figure {
   margin-top: 14%;
@@ -265,11 +267,13 @@ footer {
 .footer-container img {
     width: 40%;
     height: 40%;
+    border: 1px solid white;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    box-shadow: gray 0 0 12px;
     margin-left: 1em;
   }
 // .footer-logo {
@@ -459,14 +463,10 @@ footer {
       }
         li:nth-child(2) {
           margin-top: .8em;
-          // width: 65%;
-          // height: 65%;
           } li:nth-child(3) {
             margin-top: .8em;
           }
             li:nth-child(3) img {
-              // width: 66%;
-              // height: 66%;
               margin-top: -1.8em;
               margin-bottom: .4em;
             }
