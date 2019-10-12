@@ -14,6 +14,7 @@ import { LandingPageComponent } from './websites/landing-page/landing-page.compo
 import { ShoppingDetailsComponent } from './websites/shopping/shopping-details/shopping-details.component';
 import { HomeFooterComponent } from './home/home-footer/home-footer.component';
 import { MyWorkComponent } from './home/my-work/my-work.component';
+import { WorkSliderComponent } from './home/work-slider/work-slider.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MyWorkComponent } from './home/my-work/my-work.component';
     LandingPageComponent,
     ShoppingDetailsComponent,
     HomeFooterComponent,
-    MyWorkComponent
+    MyWorkComponent,
+    WorkSliderComponent
   ],
   imports: [
     RoutingModule,
