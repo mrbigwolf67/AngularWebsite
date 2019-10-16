@@ -4,7 +4,7 @@
 #slider figure {
   position: relative;
   width: 500%;
-//  max-height: 50vh;
+  min-height: 50%;
   margin: 1em 1em 1em 0;
   left: 0;
   animation: 20s slider infinite;
@@ -12,6 +12,7 @@
 }
 #slider figure img {
   width: 20%;
+  height: 100%;
   // padding: 1em 2em 0 0;
 
   float: left;

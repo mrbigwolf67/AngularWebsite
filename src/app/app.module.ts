@@ -15,6 +15,8 @@ import { ShoppingDetailsComponent } from './websites/shopping/shopping-details/s
 import { HomeFooterComponent } from './home/home-footer/home-footer.component';
 import { MyWorkComponent } from './home/my-work/my-work.component';
 import { WorkSliderComponent } from './home/work-slider/work-slider.component';
+import { CardComponent } from './home/card/card.component';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,15 @@ import { WorkSliderComponent } from './home/work-slider/work-slider.component';
     ShoppingDetailsComponent,
     HomeFooterComponent,
     MyWorkComponent,
-    WorkSliderComponent
+    WorkSliderComponent,
+    CardComponent
   ],
   imports: [
     RoutingModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent],

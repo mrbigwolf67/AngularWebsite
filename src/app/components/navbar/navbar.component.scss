@@ -54,7 +54,7 @@ nav {
   height: 5em;
   display: flex;
   align-items: baseline;
-  border-bottom: 3px solid rgba(255, 255, 255, .1);
+ // border-bottom: 3px solid rgba(255, 255, 255, .1);
 }
 .logo {
   width: 3em;
@@ -99,7 +99,7 @@ nav {
   -o-transition: color 650ms;
 }
 .nav-list a:hover {
-  color: #eb3007;
+  color: #00C2FF;
 }
 .btn {
   padding: .8em;
@@ -126,7 +126,8 @@ nav {
   width: 15em;
   display: block;
   position: absolute;
-  border-top: 3px solid #eb3007;
+  // border-top: 3px solid #eb3007;
+  border-top: 3px solid #00C2FF;
   background-color: #191919d0;
   z-index: 100;
   top: 16em;
@@ -144,17 +145,17 @@ nav {
   top: -2.5em;
   left: 1em;
   border: 1.0em solid transparent;
-  border-bottom-color: #eb3007;
+  border-bottom-color:  #00C2FF;
 }
 .sub-menu .sub-menu::before {
   top: .2em;
   left: -2em;
   border: .8em solid transparent;
-  border-right-color: #eb3007;
+  border-right-color: #00C2FF;
 }
 .sub-menu .sub-menu {
   border-top: none;
-  border-left: 3px solid #eb3007;
+  border-left: 3px solid  #00C2FF;
   top: 0;
   left: 160%;
 }
@@ -195,7 +196,7 @@ li.move-right {
   .sub-menu {
     position: initial;
     border: 3px solid transparent;
-    border-left-color: #eb3007;
+    border-left-color:  #00C2FF;
     margin-left: 2em;
     max-height: 0;
   }

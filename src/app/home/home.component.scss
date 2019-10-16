@@ -1,8 +1,10 @@
-// header {
-//   text-align: center;
-//   background: #f8f8f8;
-//   padding: 2em 0;
-// }
+header {
+ // text-align: center;
+ // background: #f8f8f8;
+  padding: 2em 0;
+  position: fixed;
+  z-index: 33000;
+}
 
 // h1 {
 //   font-weight: 800;
@@ -11,21 +13,26 @@
 // }
 .hero{
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.904)),  url("../../assets/images/keyboard.jpg") center no-repeat;
   background-size: cover;
-  transform: skewY(-3deg);
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  -o-transform: skewY(-3deg);
-  margin-top: -4%;
+  // transform: skewY(-3deg);
+  // -webkit-transform: skewY(-3deg);
+  // -moz-transform: skewY(-3deg);
+  // -ms-transform: skewY(-3deg);
+  // -o-transform: skewY(-3deg);
+  margin-top: -14%;
   z-index: 20;
   border-bottom-right-radius: 40px;
 }
 .hero:after {
   content: "";
   z-index: -5;
+  transition: opacity 3s;
+  -webkit-transition: opacity 3s;
+  -moz-transition: opacity 3s;
+  -ms-transition: opacity 3s;
+  -o-transition: opacity 3s;
 }
 .text{
   width: 100%;
@@ -39,13 +46,13 @@
 
 .text h1{
   font-size: 2.3em;
-  margin: 2em 0 1em;
+  margin: 5em 0 1em;
   font-family: 'Blastimo', sans-serif;
-  transform: skewY(3deg);
-  -webkit-transform: skewY(3deg);
-  -moz-transform: skewY(3deg);
-  -ms-transform: skewY(3deg);
-  -o-transform: skewY(3deg);
+  // transform: skewY(3deg);
+  // -webkit-transform: skewY(3deg);
+  // -moz-transform: skewY(3deg);
+  // -ms-transform: skewY(3deg);
+  // -o-transform: skewY(3deg);
 }
 
 .text h2{
@@ -57,11 +64,11 @@
 .text p{
   font-size: 1.2em;
   margin-bottom: 2em;
-  transform: skewY(2deg);
-  -webkit-transform: skewY(2deg);
-  -moz-transform: skewY(2deg);
-  -ms-transform: skewY(2deg);
-  -o-transform: skewY(2deg);
+  // transform: skewY(2deg);
+  // -webkit-transform: skewY(2deg);
+  // -moz-transform: skewY(2deg);
+  // -ms-transform: skewY(2deg);
+  // -o-transform: skewY(2deg);
 }
 
 .text .btn{
@@ -70,11 +77,11 @@
   padding-right: 3em;
   color: #eee;
   text-transform: uppercase;
-  transform: skewY(2deg);
-  -webkit-transform: skewY(2deg);
-  -moz-transform: skewY(2deg);
-  -ms-transform: skewY(2deg);
-  -o-transform: skewY(2deg);
+  // transform: skewY(2deg);
+  // -webkit-transform: skewY(2deg);
+  // -moz-transform: skewY(2deg);
+  // -ms-transform: skewY(2deg);
+  // -o-transform: skewY(2deg);
 }
 .container {
   text-align: center;
