@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&display=swap');
 // nav {
 //   // padding: 0 2rem;
 //   // background: black;
@@ -59,20 +59,29 @@ nav {
 .logo {
   width: 3em;
   height: 3em;
-  background-color: rgba(0, 195, 255, 0.705);
-  // background-color: #eb3007;
+  background-color: rgb(251, 253, 253);
+  //background-color: #eb3007;
   display: flex;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
-  margin: 1em;
+  margin: 1.2em;
+  //position: fixed;
 }
-.logo > i {
-  margin: auto;
-  font-size: 2.5em;
-  color: #eee;
+// .logo > i {
+//   margin: auto;
+//   font-size: 2.5em;
+//   color: #e7e7e7;
+
+// }
+.logo  p {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 2em;
+  font-weight: 900;
+  color: rgb(33, 191, 240);
+  padding-right: 2em;
 }
 .nav-list {
   display: flex;
